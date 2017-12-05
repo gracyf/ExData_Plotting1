@@ -17,11 +17,11 @@ plot(ec_df$datetime,ec_df$Global_active_power,type="n",xlab=" ",ylab="Global Act
 lines(ec_df$datetime,ec_df$Global_active_power)
 plot(ec_df$datetime,ec_df$Voltage,type="n",xlab="datetime",ylab="Voltage")
 lines(ec_df$datetime,ec_df$Voltage)
-plot(ec_df$datetime,ec_df$Sub_metering_1,type ="n",xlab = " ", ylab="Energy Sub Metering",ylim=c(0,40))
+plot(ec_df$datetime,ec_df$Sub_metering_1,type ="n",xlab = " ", ylab="Energy Sub Metering")
 lines(ec_df$datetime,ec_df$Sub_metering_1)
 lines(ec_df$datetime,ec_df$Sub_metering_2,col="red")
 lines(ec_df$datetime,ec_df$Sub_metering_3,col="blue")
-legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),col=c("black","red","blue"),lwd=2)
+legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),col=c("black","red","blue"),bty = "n", lty = c(1,1,1))
 plot(ec_df$datetime,ec_df$Global_reactive_power,type="n",xlab="datetime",ylab="Global_reactive_power")
 lines(ec_df$datetime,ec_df$Global_reactive_power)
 

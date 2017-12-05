@@ -12,7 +12,7 @@ ec_df$datetime = strptime(ec_df$datetime,"%Y-%m-%d %H:%M:%S")
 
 png("plot3.png",width=480,height=480,units="px")
 
-plot(ec_df$datetime,ec_df$Sub_metering_1,type ="n",xlab = " ", ylab="Energy Sub Metering",ylim=c(0,40))
+plot(ec_df$datetime,ec_df$Sub_metering_1,type ="n",xlab = " ", ylab="Energy Sub Metering")
 
 lines(ec_df$datetime,ec_df$Sub_metering_1)
 lines(ec_df$datetime,ec_df$Sub_metering_2,col="red")
